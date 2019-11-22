@@ -38,7 +38,7 @@ server <- function(input, output){
     of Harvard Gov 1005: Data class! My name is Amal Abdi, and I am a senior at Harvard. This data is from 
     the American Community Survey and Princeton Eviction Lab. In this project, I am exploring evictions in Ohio."})
   
-  # Using renderPlot to insert the graph for my Map tab panel which I defined in the ui
+  # Using renderPlot to insert the graph for my Evictions tab panel which I defined in the ui
 output$graph1 <- renderPlot({  
     data %>% 
     
@@ -51,6 +51,8 @@ output$graph1 <- renderPlot({
             # Adding line to make it easier to read
             geom_smooth(method = "lm", se = FALSE)
 })
+
+# Using renderPlot again to add plot for Rent-Burdened tab panel which I definied in UI
 output$graph2 <- renderPlot({  
   data %>% 
     
