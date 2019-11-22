@@ -18,8 +18,9 @@ ui <- navbarPage("Navigate",
                  # Adding a tab for my about page
                  tabPanel("About",
                           textOutput("text")),
+                 
                  # Adding a tab to the navbar for my map
-                 tabPanel("Rent-Burden Ohio Households",
+                 tabPanel("Rent-Burdened Ohio Households",
                           plotOutput("graph2")),
                  
                  # Adding tab for second graph
