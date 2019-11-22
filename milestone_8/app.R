@@ -62,7 +62,7 @@ output$graph2 <- renderPlot({
     labs(title = "Percentage of households rent-burdened", subtitle = "rent-burdened = paying > 30% of
          income to rent")
 })
-} 
+}
 
 # Run the application 
 shinyApp(ui = ui, server = server)
